@@ -1,12 +1,23 @@
 {
-  "name": "q-fetch",
+  "name": "my-fetch",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "jsnext:main": "src.js",
+  "files": [ "index.js", "src.js" ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "rollup -c",
     "deploy": "git add . && git commit -am 'fix' && git push && npm publish"
+  },
+  "dependencies": {
+    "my-global": "^1.0.0",
+    "my-util": "^1.0.0",
+    "deferred-promise": "^2.0.0"
+  },
+  "devDependencies": {
+    "rollup": "*",
+    "rollup-plugin-node-resolve": "*"
   },
   "repository": {
     "type": "git",
@@ -14,15 +25,6 @@
   },
   "keywords": [],
   "author": "",
-  "dependencies": {
-    "q-global": "^1.0.0",
-    "q-utils": "^1.0.0",
-    "deferred-promise": "^2.0.0"
-  },
-  "devDependencies": {
-    "rollup": "*",
-    "rollup-plugin-node-resolve": "*"
-  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/QiV/q-fetch/issues"
