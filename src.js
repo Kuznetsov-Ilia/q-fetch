@@ -1,5 +1,5 @@
-import {window, document, body} from 'q-global';
-import {isEmpty, isString, isObject, isset, rand} from 'q-utils';
+import {window, document, body} from 'my-global';
+import {isEmpty, isString, isObject, isset, rand} from 'my-util';
 import Promise from 'deferred-promise';
 const DEFAULT_TIMEOUT = 5000;
 const DONE = 4;
